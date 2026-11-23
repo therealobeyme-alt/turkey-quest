@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dk06rm8sred2w"]
+
+[ext_resource type="Script" uid="uid://c37fxwtcye5y2" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="SpriteFrames" uid="uid://50febw5y7pix" path="res://art/farmer_frames.tres" id="2_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u6o3l"]
+radius = 23.537205
+
+[node name="Player" type="CharacterBody2D" unique_id=943212255]
+motion_mode = 1
+script = ExtResource("1_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=651951634]
+position = Vector2(0.5, 0.5)
+rotation = 0.008726646
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_u6o3l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1911201841]
+texture_filter = 1
+position = Vector2(3.0000005, -25.999996)
+sprite_frames = ExtResource("2_onrkg")
+animation = &"walk_s"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=527022204]
+position = Vector2(1.4999986, 2.500002)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1949420709]
+position = Vector2(2.3841858e-07, 1.9073486e-06)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1149156401]
+position = Vector2(3.0000002, -25.999998)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://d30w0cpwcbll3"]
+
+[ext_resource type="PackedScene" uid="uid://dk06rm8sred2w" path="res://player.tscn" id="1_u52ul"]
+
+[node name="level" type="Node2D" unique_id=518152998]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=881383092]
+z_index = -10
+offset_left = -41.288208
+offset_top = 42.26828
+offset_right = -1.288208
+offset_bottom = 82.26828
+rotation = 0.019570136
+scale = Vector2(1.5965731, 2.3924954)
+pivot_offset = Vector2(1497.6545, 204.47691)
+offset_transform_enabled = true
+offset_transform_position = Vector2(-800, -500)
+offset_transform_scale = Vector2(1000, 1000)
+color = Color(0.3254902, 0.14509805, 0.023529412, 1)
+
+[node name="Player" parent="." unique_id=943212255 instance=ExtResource("1_u52ul")]
+z_index = 10
+position = Vector2(2, 3.0517578e-05)
+scale = Vector2(1, 1.0000001)
